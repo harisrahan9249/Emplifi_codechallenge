@@ -8,7 +8,7 @@ body{
     height: 980px;
     left: 300px;
     top:340px;
-    background: #F3F3F5;
+    background: rgba(106, 132, 226, 0.1);
 }
 .main-page{
     width: 932px;
@@ -28,8 +28,9 @@ body{
     flex-direction: column;
     width: 540px;
     height: 540px;
-    padding: 0px 0px 0px 36px;
-    gap: 60px;
+    margin-left: 36px;
+    margin-right: 60px;
+    justify-content: center;
 
 }
 .right-section h5{
@@ -61,9 +62,10 @@ body{
     width: 359px;
     font-weight: 400px;
     /* font-size: 13px; */
+    margin-bottom: 48px;
 }
 .left-section{
-    width: 876px;
+    width: 476px;
     height: 600px;
     background: rgba(106, 132, 226, 0.1);
     border-radius: 0px 19px 0px 0px;
@@ -74,14 +76,23 @@ body{
    
 }
 .image_area{
+    width: 476px;
+    height: 540px;
     position: absolute;
     display: flex;
     align-items: center;
     font-weight: 500;
     letter-spacing: 0.02px;
-    top: calc(68% - 400px/2);
-    left: calc(55% - 400px/2);
+    /* top: calc(68% - 400px/2);
+    left: calc(55% - 400px/2); */
 
+}
+.image_area h4{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .right_section_btn{
     display: flex;
@@ -96,6 +107,7 @@ body{
     height: 18px;
     width: 70px;
     margin-left: 3em;
+    color: #0038E5;
 }
 .main_btn{
     background: linear-gradient(127.93deg, #2EBD7A -2.9%, #25A066 96.02%);
@@ -113,12 +125,38 @@ body{
 .down_section{
     display: flex;
     width: 980px;
-    gap: 96px;
+    gap: 94px;
     left: 300px;
     top: 340px;
     background: #F3F3F5;
     align-items: flex-start;
+    margin-top: 96px;
+    /* padding: 24px; */
 }
+.down_section h4{
+    height: 18px;
+    margin-bottom: 24px;
+    color: gray;
+    font-weight: 800;
+    width: 240px;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+
+   
+    line-height: 18px;
+}
+.down_section p{
+   
+   width: 240px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    align-self: stretch;
+}
+
 .down_section_content{
     display: flex;
     flex-direction: column;
@@ -129,12 +167,14 @@ body{
     height: 17px;
     background: #acbcec;
     border-radius: 12px;
-    
+    margin-bottom: 24px;
     align-items: center;
     justify-content: center;
     display: flex;
+
     
 }
+
 .down_section_circle2{
     width: 10px;
     height: 10px;
@@ -246,3 +286,151 @@ body{
     border-radius: 80px 0px 0px 80px;
     
 }
+/* @media screen and (max-width:1280px)
+{
+
+    .right-section{
+       
+        margin-right: 120px;
+        width: 600px;
+    }
+    .left-section{
+        width: 616px;
+        
+    }
+    .down_section p{
+        width: 360px;
+    }
+    .down_section h4{
+        width: 360px;
+    }
+    
+    
+} */
+@media screen and (min-width:1280px)
+{
+
+    .right-section{
+       
+        margin-left: 36px;
+        width: 540px;
+        margin-right: 60px;
+    }
+    .left-section{
+        width: 616px;
+        
+    }
+    .down_section p{
+        width: 300px;
+    }
+    .down_section h4{
+        width: 300px;
+    }
+    .main-page{
+        width: 1308px;
+    }
+    .main-page{
+        width: 1308px;
+        /* background: none; */
+        border-radius: 0px;
+    }
+    .logo{
+        margin-left: 28.2em;
+    }
+
+   
+    
+}
+@media screen and (max-width:1280px)
+{
+
+    .right-section{
+       
+        
+        width: 600px;
+       margin-left: 120px;
+    }
+    .left-section{
+        width: 616px;
+        
+    }
+    .down_section p{
+        width: 360px;
+    }
+    .down_section h4{
+        width: 360px;
+    }
+    .main-page{
+        width: 1308px;
+    }
+    .main-page{
+        width: 1308px;
+        /* background: none; */
+        border-radius: 0px;
+    }
+    .logo{
+        margin-left: 28.2em;
+    }
+
+   
+    
+}
+@media screen and (max-width:1560px)
+{
+
+    .right-section{
+       
+        
+        width: 600px;
+       margin-left: 120px;
+    }
+    .left-section{
+        width: 616px;
+        
+    }
+    .down_section p{
+        width: 360px;
+    }
+    .down_section h4{
+        width: 360px;
+    }
+    .main-page{
+        width: 1308px;
+    }
+    .main-page{
+        width: 1308px;
+        /* background: none; */
+        border-radius: 0px;
+    }
+    .logo{
+        margin-left: 28.2em;
+    }
+
+   
+    
+}
+@media screen and (min-width:1560px)
+{
+
+    .right-section{
+       
+        margin-left: 240px;
+        width: 600px;
+        margin-right: 120px;
+    }
+    .left-section{
+        width: 828px;
+        
+    }
+    .down_section p{
+        width: 360px;
+    }
+    .down_section h4{
+        width: 360px;
+    }
+    .main-page{
+        width: 1308px;
+    }
+    
+}
+
